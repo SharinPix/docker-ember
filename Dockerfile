@@ -1,7 +1,5 @@
 FROM node:18.16
 
-RUN adduser --gecos '' user && passwd -d user
-
-USER user
+USER node
 
 WORKDIR /app/ember
